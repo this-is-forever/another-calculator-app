@@ -123,7 +123,7 @@ public class CalculatorApp implements KeyListener {
 
     // Formatter used to format numbers on the display with commas
     private final static DecimalFormat NUMBER_FORMATTER = new DecimalFormat("#,###", DecimalFormatSymbols.getInstance(Locale.ENGLISH));
-    // Formatter used to format numbers on the display, but without commas. Prevents needless decimals
+    // Formatter used to format answers into String format for currentInput after hitting solve
     private final static DecimalFormat NUMBER_FORMATTER_NO_COMMAS = new DecimalFormat("0", DecimalFormatSymbols.getInstance(Locale.ENGLISH));
     static {
         // Sets the maximum number of formatted decimal places to
