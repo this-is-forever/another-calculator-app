@@ -317,6 +317,12 @@ public class CalculatorApp implements KeyListener {
     private void addDecimal() {
         // Check to see if the input already has a decimal point
         if(!currentInput.contains(".")) {
+            // Change the input to 0 if the overwrite flag is set, so that hitting the decimal key changes input
+            // to "0."
+            if(overwrite) {
+                overwrite = false;
+                currentInput = "0";
+            }
             // It doesn't, so add one
             currentInput += ".";
             // Update the display
