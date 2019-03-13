@@ -1,0 +1,11 @@
+plugins {
+	id 'application'
+}
+
+application {
+	mainClassName = 'calculator.ui.CalculatorApp'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
