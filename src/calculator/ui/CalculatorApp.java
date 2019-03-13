@@ -193,6 +193,7 @@ public class CalculatorApp implements KeyListener {
         // Create the next layer as a grid with 5 rows and 4 columns
         // Buttons are added left to right and then top to bottom
         layer = new JPanel(new GridLayout(5, 4, APP_COMPONENT_SPACING, APP_COMPONENT_SPACING));
+
         // Used as a reference to the current button being created
         JButton b;
 
