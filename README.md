@@ -5,7 +5,7 @@ Written in Java with the UI implemented using Swing
 
 ## Building
 
-If you have Gradle installed, run 'gradle build' from within the project's home directory
+If you have Gradle installed, run `gradle build` from within the project's home directory
 
 Otherwise, run `.\gradlew.bat build` (`./gradlew build` on UNIX)
 
