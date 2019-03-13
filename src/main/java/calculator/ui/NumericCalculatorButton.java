@@ -6,7 +6,7 @@ import java.awt.*;
 
 /**
  * A calculator.ui.CalculatorButton that displays a single digit as input which will send that digit
- * to the calculator.ui.CalculatorApp when clicked.
+ * to a Calculator object when clicked.
  */
 public class NumericCalculatorButton extends CalculatorButton {
 
