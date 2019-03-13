@@ -109,7 +109,7 @@ public class CalculatorApp implements KeyListener {
     // References application's input/output display
     private JTextField displayField;
 
-    // Holds the application's current and stored inputs for math
+    // Holds the application's stored input
     private double storedInput;
 
     // Holds the operators for the current problem and previous problem
