@@ -1,13 +1,11 @@
-package calculator.ui; /**
- * The calculator.ui.Gap class allows the quick and easy creation of vertical or horizontal gaps between components in a Swing
- * container
- */
+package calculator.ui;
 
 import javax.swing.*;
 import java.awt.*;
 
 /**
- * A class with static methods used to create pixel-specific gaps between Swing UI components
+ * The calculator.ui.Gap class allows the quick and easy creation of vertical or horizontal gaps between components in a Swing
+ * container
  */
 public class Gap {
     private static int gap = 5;

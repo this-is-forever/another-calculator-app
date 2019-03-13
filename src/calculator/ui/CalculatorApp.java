@@ -315,11 +315,12 @@ public class CalculatorApp implements KeyListener {
      */
     private void addDecimal() {
         // Check to see if the input already has a decimal point
-        if(!currentInput.contains("."))
+        if(!currentInput.contains(".")) {
             // It doesn't, so add one
             currentInput += ".";
-        // Update the display
-        update();
+            // Update the display
+            update();
+        }
     }
 
     /**
