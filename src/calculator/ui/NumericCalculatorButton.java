@@ -1,5 +1,7 @@
 package calculator.ui;
 
+import calculator.Calculator;
+
 import java.awt.*;
 
 /**
@@ -11,7 +13,7 @@ public class NumericCalculatorButton extends CalculatorButton {
     // The digit this button will represent
     private int value;
 
-    public NumericCalculatorButton(int number, CalculatorApp app) {
+    public NumericCalculatorButton(int number, Calculator calc) {
         // Set the text of the button to the number it will represent
         super(Integer.toString(number));
         // Set the button's value to the number given
@@ -19,7 +21,7 @@ public class NumericCalculatorButton extends CalculatorButton {
         // Make the font bold to make it stand out
         setFont(getFont().deriveFont(Font.BOLD));
         // Add an action listener that will send the app the digit when the button is clicked
-        addActionListener(e -> app.addDigit(value));
+        addActionListener(e -> calc.addDigit(value));
     }
 
 }
