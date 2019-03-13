@@ -121,12 +121,14 @@ public class CalculatorApp implements KeyListener {
     // Holds the current input as a String
     private String currentInput;
 
-    // Formatter used to format numbers on the display
+    // Formatter used to format numbers on the display with commas
     private final static DecimalFormat NUMBER_FORMATTER = new DecimalFormat("#,###", DecimalFormatSymbols.getInstance(Locale.ENGLISH));
+    // Formatter used to format numbers on the display, but without commas. Prevents needless decimals
     private final static DecimalFormat NUMBER_FORMATTER_NO_COMMAS = new DecimalFormat("0", DecimalFormatSymbols.getInstance(Locale.ENGLISH));
     static {
-        NUMBER_FORMATTER.setMaximumFractionDigits(340); // Sets the maximum number of formatted decimal places to
+        // Sets the maximum number of formatted decimal places to
         // the maximum possible for the double data type
+        NUMBER_FORMATTER.setMaximumFractionDigits(340);
         NUMBER_FORMATTER_NO_COMMAS.setMaximumFractionDigits(340);
     }
 
