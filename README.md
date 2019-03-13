@@ -7,10 +7,10 @@ Written in Java with the UI implemented using Swing
 
 If you have Gradle installed, run 'gradle build' from within the project's home directory
 
-Otherwise, run '.\gradlew.bat' ('./gradlew' on UNIX)
+Otherwise, run `.\gradlew.bat build` (`./gradlew build` on UNIX)
 
 ## Running the application
 
-With Gradle installed, simply run 'gradle run' from the project's home directory
+With Gradle installed, simply run `gradle run` from the project's home directory
 
-Otherwise, run '.\gradlew.bat run' ('./gradlew run' on UNIX)
+Otherwise, run `.\gradlew.bat run` (`./gradlew run` on UNIX)
