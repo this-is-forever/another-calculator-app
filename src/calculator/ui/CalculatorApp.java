@@ -336,7 +336,7 @@ public class CalculatorApp implements KeyListener {
             currentInput = "";
         }
 
-        // Limit input to 21 characters
+        // Limit input to 16 characters
         if(currentInput.length() > 15)
             return;
         // Add the current digit to the end of the String and update the display
