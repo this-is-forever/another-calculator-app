@@ -6,6 +6,13 @@ application {
 	mainClassName = 'calculator.ui.CalculatorApp'
 }
 
+jar {
+	baseName = 'Calculator'
+	manifest {
+		attributes 'Main-Class': 'calculator.ui.CalculatorApp'
+	}
+}
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
