@@ -84,6 +84,7 @@ public class CalculatorApp implements KeyListener {
             HOTKEY_MULTIPLY     = '*',
             HOTKEY_DIVIDE       = '/',
             HOTKEY_POWER        = '^',
+            HOTKEY_DECIMAL      = '.',
             HOTKEY_SOLVE        = KeyEvent.VK_ENTER,
             HOTKEY_CLEAR        = KeyEvent.VK_DELETE,
             HOTKEY_BACKSPACE    = KeyEvent.VK_BACK_SPACE;
@@ -476,7 +477,7 @@ public class CalculatorApp implements KeyListener {
             addDigit(c - '0');
         } else { // Otherwise, see if a hotkey was pressed
             switch(c) {
-                case '.':
+                case HOTKEY_DECIMAL:
                     addDecimal();
                     break;
                 case HOTKEY_BACKSPACE:
